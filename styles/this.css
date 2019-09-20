@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexOuterCenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.block {
+  padding: 1em;
+  margin: 1em;
+  font-size: 24px;
+}
+
+a:link,a:active,a:hover,a:visited {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: 800;
+}
+
+a:hover {
+  color: black;
+}
