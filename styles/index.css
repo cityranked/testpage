@@ -1,0 +1,82 @@
+a:link,a:visited,a:active,a:hover {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 1em;
+}
+
+.relshell {
+  position: relative;
+}
+
+dl {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+ul {
+  padding: 1em;
+  margin: 1em;
+}
+
+li {
+  padding: 1em;
+  margin: 1em;
+}
+
+#thunderform {
+  /*width: 100%;*/
+}
+
+.flexOuter {
+  display: flex;
+}
+
+.flexRow {
+  flex-flow: row wrap;
+}
+
+.flexColumn {
+  flex-flow: column wrap;
+}
+
+.flexCenter {
+  justify-content: center;
+}
+
+.flexBetween {
+  justify-content: space-between;
+}
+
+.navkit {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 2em;
+  padding: 0.25;
+}
+
+.burger {
+  background-color: black;
+  height: 0.25em;
+  width: 1.25em;
+  margin: 0.1em;
+}
+
+.goblin,
+.wyvern {
+  padding: 1em;
+  margin: 1em;
+  border: 1.5px solid cornflowerblue;
+  border-radius: 3px;
+  font-size: 12px;
+  width: 108px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wyvern {
+  background-color: white;
+  color: black;
+  width: 108px;
+}
