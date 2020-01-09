@@ -26,6 +26,14 @@ li {
   margin: 1em;
 }
 
+.toggleHinge {
+  font-size: 36px;
+}
+
+.toggleTitle {
+  font-size: 32px;
+}
+
 #thunderform {
   /*width: 100%;*/
 }
