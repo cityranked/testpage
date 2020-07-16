@@ -26,6 +26,7 @@
     </nav>
   </header>
   -->
+  <!--
   <div class="flexOuter flexRow flexCenter">
     <form id="metaform" class="shortForm" action="index.html" method="POST">
       <input id="inputCount" class="" type="number"></div>
@@ -37,6 +38,55 @@
       </dl>
     </form>
   </div>
+-->
+<div id="local-biz-json-builder">
+  <h2>Local Business Details</h2>
+  <label for="business-name">Business Name
+    <input type="text" class="json-text" id="business-name" />
+  </label>
+  <label for="street-address">Street Address
+    <input type="text" class="json-text" id="street-address" />
+  </label>
+  <label for="city">City
+    <input type="text" class="json-text" id="city" />
+  </label>
+  <label for="region">Region (State/Province)
+    <input type="text" class="json-text" id="region" />
+  </label>
+  <label for="postcode">Postcode
+    <input type="text" class="json-text" id="postcode" />
+  </label>
+  <label for="telephone">Telephone Number
+    <input type="text" class="json-text" id="telephone" />
+  </label>
+  <label for="service-area">Your Service Area
+    <input type="text" class="json-text" id="service-area" />
+  </label>
+  <label for="logo">Link to Your Logo
+    <input type="text" class="json-text" id="logo" />
+  </label>
+  <div id="biz-hours-builder">
+    <h3>Business Hours</h3>
+    <label for="select-weekday">Select Weekday</label>
+    <select id="select-weekday">
+      <!--javascript-->
+    </select>
+  </div>
+  <div id="sameas-links-builder">
+    <h3>Social Media Profile Links</h3>
+    <label for="sameas-fields-count">Number of Links
+      <input type="number" min="1" id="sameas-fields-count" class="field-counter" />
+    </label>
+    <div class="flex-fields"></div>
+  </div>
+  <div id="offercatalog-links-builder">
+    <h3>Links on Your Website that Describe Your Services</h3>
+    <label for="servicelinks-fields-count">Number of Links
+      <input type="number" min="1" id="servicelinks-fields-count" class="field-counter" />
+    </label>
+    <div class="flex-fields"></div>
+  </div>
+</div>
 </body>
 </html>
-<script src='lib/index.js'></script>
+<script src='lib/local-biz-builder.js'></script>
