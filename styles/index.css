@@ -6,55 +6,81 @@ a:link,a:visited,a:active,a:hover {
   margin: 1em;
 }
 
+form#local-biz-json-builder,
+select,
+option,
+input {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+section.local-biz-section {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 3px;
+  max-width: 50%;
+  min-width: 50%;
+}
+
+section#nap {
+  border: 2.2px solid blue;
+}
+
+section#info {
+  border: 2.2px solid green;
+}
+
+section#links {
+  border: 2.2px solid yellow;
+}
+
 .relshell {
   position: relative;
 }
 
-dl {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+h2,
+h3,
+h4 {
+  text-align: center;
 }
 
-ul {
-  padding: 1em;
-  margin: 1em;
+label {
+  max-width: 9em;
+  text-indent: 0.5em;
+  margin: 0.25em;
 }
 
-li {
-  padding: 1em;
-  margin: 1em;
+input,
+select,
+option {
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
-.toggleHinge {
-  font-size: 36px;
+input.field-counter {
+  max-width: 3em;
+  text-align: center;
+  font-size: 16px;
 }
 
-.toggleTitle {
-  font-size: 32px;
-}
-
-#thunderform {
-  /*width: 100%;*/
-}
-
-.flexOuter {
+.flex-outer {
   display: flex;
 }
 
-.flexRow {
+.flex-row {
+  display: flex;
   flex-flow: row wrap;
 }
 
-.flexColumn {
+.flex-column {
+  display: flex;
   flex-flow: column wrap;
 }
 
-.flexCenter {
+.flex-center {
   justify-content: center;
 }
 
-.flexBetween {
+.flex-between {
   justify-content: space-between;
 }
 
@@ -63,28 +89,4 @@ li {
   border-radius: 2px;
   width: 2em;
   padding: 0.25;
-}
-
-.burger {
-  background-color: black;
-  height: 0.25em;
-  width: 1.25em;
-  margin: 0.1em;
-}
-
-.goblin,
-.wyvern {
-  padding: 1em;
-  margin: 1em;
-  border: 1.5px solid cornflowerblue;
-  border-radius: 3px;
-  font-size: 12px;
-  width: 108px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.wyvern {
-  background-color: white;
-  color: black;
-  width: 108px;
 }

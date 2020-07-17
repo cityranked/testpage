@@ -10,13 +10,13 @@
     <div id="relshell"></div>
 
     <div class="flexOuter flexCol flexSpace navkit">
-      <div class="flexOuter flexRow flexCenter"><div class="burger"></div></div>
-      <div class="flexOuter flexRow flexCenter"><div class="burger"></div></div>
-      <div class="flexOuter flexRow flexCenter"><div class="burger"></div></div>
+      <div class="flexOuter flexflex-row flexCenter"><div class="burger"></div></div>
+      <div class="flexOuter flexflex-row flexCenter"><div class="burger"></div></div>
+      <div class="flexOuter flexflex-row flexCenter"><div class="burger"></div></div>
     </div>
 
-    <nav toggle-init="display,block" toggle-props="none,flex,block" class="flexOuter flexRow flexCenter toggleNav">
-      <ul class="flexOuter flexRow flexSpace">
+    <nav toggle-init="display,block" toggle-props="none,flex,block" class="flexOuter flexflex-row flexCenter toggleNav">
+      <ul class="flexOuter flexflex-row flexSpace">
         <li><a href="#">bart</a></li>
         <li><a href="#">lisa</a></li>
         <li><a href="#">marge</a></li>
@@ -27,66 +27,117 @@
   </header>
   -->
   <!--
-  <div class="flexOuter flexRow flexCenter">
+  <div class="flexOuter flexflex-row flexCenter">
     <form id="metaform" class="shortForm" action="index.html" method="POST">
       <input id="inputCount" class="" type="number"></div>
     </form>
   </div>
-  <div class="flexOuter flexRow flexCenter">
+  <div class="flexOuter flexflex-row flexCenter">
     <form id="thunderform" class="faveForm" action="index.html" method="POST">
       <dl id="formApp">
       </dl>
     </form>
   </div>
 -->
-<div id="local-biz-json-builder">
+<form id="local-biz-json-builder">
   <h2>Local Business Details</h2>
-  <label for="business-name">Business Name
-    <input type="text" class="json-text" id="business-name" />
-  </label>
-  <label for="street-address">Street Address
-    <input type="text" class="json-text" id="street-address" />
-  </label>
-  <label for="city">City
-    <input type="text" class="json-text" id="city" />
-  </label>
-  <label for="region">Region (State/Province)
-    <input type="text" class="json-text" id="region" />
-  </label>
-  <label for="postcode">Postcode
-    <input type="text" class="json-text" id="postcode" />
-  </label>
-  <label for="telephone">Telephone Number
-    <input type="text" class="json-text" id="telephone" />
-  </label>
-  <label for="service-area">Your Service Area
-    <input type="text" class="json-text" id="service-area" />
-  </label>
-  <label for="logo">Link to Your Logo
-    <input type="text" class="json-text" id="logo" />
-  </label>
-  <div id="biz-hours-builder">
-    <h3>Business Hours</h3>
-    <label for="select-weekday">Select Weekday</label>
-    <select id="select-weekday">
-      <!--javascript-->
-    </select>
+  <div class="flex-row flex-center">
+
+  <section class="local-biz-section"id="nap">
+    <h4>Name Address Phone</h4>
+    <div class="flex-row flex-center">
+      <label for="business-name">Business Name
+        <input type="text" class="json-text" id="business-name" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="street-address">Street Address
+        <input type="text" class="json-text" id="street-address" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="city">City
+        <input type="text" class="json-text" id="city" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="region">Region (State/Province)
+        <input type="text" class="json-text" id="region" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="postcode">Postcode
+        <input type="text" class="json-text" id="postcode" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="telephone">Telephone Number
+        <input type="text" class="json-text" id="telephone" />
+      </label>
+    </div>
+  </section>
+
   </div>
-  <div id="sameas-links-builder">
-    <h3>Social Media Profile Links</h3>
-    <label for="sameas-fields-count">Number of Links
-      <input type="number" min="1" id="sameas-fields-count" class="field-counter" />
-    </label>
-    <div class="flex-fields"></div>
+  <div class="flex-row flex-center">
+
+  <section class="local-biz-section"id="info">
+    <h4>Operations Info</h4>
+    <div class="flex-row flex-center">
+      <label for="service-area">Your Service Area
+        <input type="text" class="json-text" id="service-area" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <label for="logo">Link to Your Logo
+        <input type="text" class="json-text" id="logo" />
+      </label>
+    </div>
+    <div class="flex-row flex-center">
+      <div id="biz-hours-builder">
+        <h3>Business Hours</h3>
+        <label for="select-weekday">Select Weekday</label>
+        <select id="select-weekday">
+          <!--javascript-->
+        </select>
+        <div class="flex-fields"></div>
+      </div>
+    </div>
+  </section>
+
   </div>
-  <div id="offercatalog-links-builder">
-    <h3>Links on Your Website that Describe Your Services</h3>
-    <label for="servicelinks-fields-count">Number of Links
-      <input type="number" min="1" id="servicelinks-fields-count" class="field-counter" />
-    </label>
-    <div class="flex-fields"></div>
+  <div class="flex-row flex-center">
+
+  <section class="local-biz-section"id="links">
+    <h4>Citation & Services</h4>
+    <div class="flex-row flex-center">
+      <div id="same=as-builder">
+        <h3>Social Media Profile Links</h3>
+        <div class="flex-row flex-center">
+          <label for="same-as-fields-count">Number of Links
+            <input type="number" min="1" id="sameas-fields-count" class="field-counter" />
+          </label>
+        </div>
+        <div class="flex-fields"></div>
+      </div>
+    </div>
+    <div class="flex-row flex-center">
+      <div id="offer-catalog-builder">
+        <h3>Links on Your Website that Describe Your Services</h3>
+        <div class="flex-row flex-center">
+          <label for="service-links-fields-count">Number of Links
+            <input type="number" min="1" id="servicelinks-fields-count" class="field-counter" />
+          </label>
+        </div>
+        <div class="flex-fields"></div>
+      </div>
+    </div>
+  </section>
+
   </div>
-</div>
+
+</form>
+
 </body>
 </html>
+
 <script src='lib/local-biz-builder.js'></script>
