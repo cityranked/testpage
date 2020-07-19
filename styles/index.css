@@ -10,7 +10,7 @@ form#local-biz-json-builder,
 select,
 option,
 input {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Ubumtu", Helvetica, Arial, sans-serif;
 }
 
 section.local-biz-section {
@@ -49,8 +49,20 @@ label {
   margin: 0.25em;
 }
 
-.day_label {
+.day-label {
 
+}
+
+.sameas-label {
+
+}
+
+.service-link-label {
+
+}
+
+.keyword-label {
+  
 }
 
 input,
@@ -58,6 +70,12 @@ select,
 option {
   padding: 0.5em;
   margin: 0.5em;
+}
+
+select,
+option {
+  font-size: 16px;
+  line-height: 100%;
 }
 
 input.field-counter {
