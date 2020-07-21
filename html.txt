@@ -23,7 +23,116 @@
   </script>-->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "image": [
+          "https://example.com/photos/1x1/photo.jpg",
+          "https://example.com/photos/4x3/photo.jpg",
+          "https://example.com/photos/16x9/photo.jpg"
+         ],
+        "@id": "http://davessteakhouse.example.com",
+        "name": "Dave's Steak House",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "148 W 51st St",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10019",
+          "addressCountry": "US"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Lillian Ruiz"
+          }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.761293,
+          "longitude": -73.982294
+        },
+        "url": "http://www.example.com/restaurant-locations/manhattan",
+        "telephone": "+12122459600",
+        "servesCuisine": "American",
+        "priceRange": "$$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday"
+            ],
+            "opens": "11:30",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "11:30",
+            "closes": "23:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "16:00",
+            "closes": "23:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "16:00",
+            "closes": "22:00"
+          }
+        ],
+        "menu": "http://www.example.com/menu",
+        "acceptsReservations": "True"
+      }
+      </script>
+    </head>
+    <body>
+    </body>
+  </html>
 
+  Restaurant carousel (limited access)
+  Here's an example of a restaurant carousel. The Restaurant carousel is currently limited to a small set of restaurant providers. If you would like to participate, register your interest in our form.
+
+  <html>
+    <head>
+      <title>Trattoria Luigi</title>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Restaurant",
+        "name": "Trattoria Luigi",
+        "image": [
+          "https://example.com/photos/1x1/photo.jpg",
+          "https://example.com/photos/4x3/photo.jpg",
+          "https://example.com/photos/16x9/photo.jpg"
+         ],
+         "priceRange": "$$$",
+         "servesCuisine": "Italian",
+         "address": {
+           "@type": "PostalAddress",
+           "streetAddress": "148 W 51st St",
+           "addressLocality": "New York",
+           "addressRegion": "NY",
+           "postalCode": "10019",
+           "addressCountry": "US"
+         }
+      }
+      </script>
 
 </head>
 <body>
@@ -34,3 +143,183 @@
 <script src="lib/script1.js"></script>
 
 </html>
+{
+   "@context":"http://schema.org",
+   "@type":"LocalBusiness",
+   "name":"Pioneer Pest Management",
+   "logo":"https://pioneerpest.com/wp-content/uploads/2019/01/Pioneer-Pest-Logo-boxed-small-220px-web-11.png",
+   "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Portland",
+      "addressRegion":"OR",
+      "streetAddress":"2808 NE Martin Luther King Jr Blvd Ste G",
+      "postalCode":"97212"
+   },
+   "telephone":"503-253-2515",
+   "geo":{
+      "@type":"GeoCoordinates",
+      "latitude":"45.543579",
+      "longitude":"-122.661341"
+   },
+   "areaServed":{
+      "@type":"City",
+      "name":"Portland"
+   },
+   "image":"https://pioneerpest.com/wp-content/uploads/2019/01/Untitled-3.jpg",
+   "priceRange":"$$",
+   "url":"https://pioneerpest.com",
+   "openingHoursSpecification":{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":[
+         "Monday",
+         "Tuesday",
+         "Wednesday",
+         "Thursday",
+         "Friday",
+         "Saturday",
+         "Sunday"
+      ],
+      "opens":"00:00",
+      "closes":"23:59"
+   },
+   "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Pioneer Pest Management \u2013 Pest Control Services",
+      "url":"https://pioneerpest.com/",
+      "itemListElement":[
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Residential Pest Control",
+               "url":"https://pioneerpest.com/residential-pest-control/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Commercial Pest Control",
+               "url":"https://pioneerpest.com/commercial-pest-control/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Ant Extermination \u2013 Removal \u2013 Control",
+               "url":"https://pioneerpest.com/ant-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Bed Bug Extermination \u2013 Control \u2013 Removal",
+               "url":"https://pioneerpest.com/bed-bug-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Bees Wasps and Hornets Extermination",
+               "url":"https://pioneerpest.com/bees-wasps-hornets-exterminators/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Bird Removal \u2013 Control \u2013 Exclusion",
+               "url":"https://pioneerpest.com/bird-removal/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Cockroach Extermination \u2013 Control \u2013 Removal",
+               "url":"https://pioneerpest.com/cockroach-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Fleas Extermination Removal \u2013 Control",
+               "url":"https://pioneerpest.com/flea-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Mosquito Exterminators",
+               "url":"https://pioneerpest.com/mosquito-exterminators/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Rats and Mice Extermination",
+               "url":"https://pioneerpest.com/rat-mice-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Spider Extermination \u2013 Control \u2013 Removal",
+               "url":"https://pioneerpest.com/spider-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Termites Extermination \u2013 Control \u2013 Removal",
+               "url":"https://pioneerpest.com/termites-extermination/"
+            }
+         },
+         {
+            "@type":"Offer",
+            "itemOffered":{
+               "@type":"Service",
+               "name":"Wildlife Control \u2013 Removal \u2013 Trapping",
+               "url":"https://pioneerpest.com/wildlife-control/"
+            }
+         }
+      ]
+   },
+   "sameAs":[
+      "\"https://www.facebook.com/PioneerPestManagementPdx/\"",
+      " \"https://plus.google.com/u/0/+Pioneerpestmanagementpdx/about\"",
+      " \"https://plus.google.com/u/0/+PioneerPestManagementPortland/about\"",
+      " \"https://www.yelp.com/biz/pioneer-pest-management-portland\"",
+      " \"https://twitter.com/PioneerPestPDX\"",
+      " \"https://www.youtube.com/channel/UC0X1tu4IxBbG2F9BkHgTVsA\"",
+      " \"https://foursquare.com/v/pioneer-pest-management/53e968e8498e6ef4013cfce0\"",
+      " \"https://www.homeadvisor.com/rated.PioneerPestManagement.8581355.html\"",
+      " \"https://www.houzz.com/pro/pioneerpestpdx/pioneer-pest-management\"",
+      " \"https://porch.com/portland-or/pest-control-contractors/pioneer-pest-management/pp\"",
+      " \"https://www.linkedin.com/company-beta/841683/?pathWildcard=841683\"",
+      " \"https://www.bing.com/maps?ss=ypid.YN873x111549230&mkt=en-US\"",
+      " \"https://www.manta.com/c/mx3122c/pioneer-pest-management\"",
+      " \"https://www.angieslist.com/companylist/us/or/portland/pioneer-pest-management-reviews-8973107.htm\""
+   ]
+}
+
+"name":"",
+"streetAddress":"",
+"addressLocality":"",
+"addressRegion":"",
+"postalCode":"",
+"telephone":"",
+"website":"",
+"logo":"",
+"areaServed":"city",
+"openingHoursSpecification":{},
+"sameAs":[],
+"hasOfferCatalog":{}

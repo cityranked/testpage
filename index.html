@@ -39,12 +39,35 @@
     </form>
   </div>
 -->
+<div class='stickyshell'>
+  <div class="relshell">
+    <button id="print-json" class="json-builder-button">
+      Print JSON
+    </button>
+    <article class="modal" id="json-viewer">
+      <div class="close-modal" id="close-json-viewer">&times;</div>
+      <section id="json-container-outer">
+        <code id="json-container"></code>
+      <section>
+    </article>
+  </div>
+</div>
+
 <form id="local-biz-json-builder">
   <h2>Local Business Details</h2>
   <div class="flex-row flex-center">
 
   <section class="local-biz-section"id="nap">
+
+    <div class="flex-row flex-center">
+      <label for="business-type">Type of Business
+      </label>
+      <select id="select-type">
+      </select>
+    </div>
+
     <h4>Name Address Phone</h4>
+
     <div class="flex-row flex-center">
       <label for="business-name">Business Name
         <input type="text" class="json-text" id="business-name" />
@@ -82,16 +105,19 @@
 
   <section class="local-biz-section"id="info">
     <h4>Operations Info</h4>
+
+    <div class="flex-row flex-center">
+      <label for="service-keyword">Your Primary Service
+        <input type="text" class="json-primary" id="service-primary" />
+      </label>
+    </div>
+
     <div class="flex-row flex-center">
       <label for="service-area">Your Service Area
-        <input type="text" class="json-text" id="service-area" />
+        <input type="text" class="json-area" id="service-area" />
       </label>
     </div>
-    <div class="flex-row flex-center">
-      <label for="logo">Link to Your Logo
-        <input type="text" class="json-text" id="logo" />
-      </label>
-    </div>
+
     <div class="flex-row flex-center">
       <div id="biz-hours-builder">
         <h3>Business Hours</h3>
@@ -102,6 +128,7 @@
         <div class="flex-fields"></div>
       </div>
     </div>
+
   </section>
 
   </div>
@@ -109,17 +136,20 @@
 
   <section class="local-biz-section"id="links">
     <h4>Citation & Services</h4>
+
     <div class="flex-row flex-center">
-      <div id="same-as-builder">
-        <h3>Social Media Profile Links</h3>
-        <div class="flex-row flex-center">
-          <label for="same-as-fields-count">Number of Links
-            <input type="number" min="1" id="sameas-fields-count" class="field-counter" />
-          </label>
-        </div>
-        <div class="flex-fields"></div>
-      </div>
+      <label for="website">Link to Your Website
+        <input type="text" class="json-text" id="website" />
+      </label>
     </div>
+
+    <div class="flex-row flex-center">
+      <label for="logo">Link to Your Logo
+        <input type="text" class="json-text" id="logo" />
+      </label>
+    </div>
+
+
     <div class="flex-row flex-center">
       <div id="offer-catalog-builder">
         <h3>Links on Your Website that Describe Your Services</h3>
@@ -131,6 +161,19 @@
         <div class="flex-fields"></div>
       </div>
     </div>
+
+    <div class="flex-row flex-center">
+      <div id="same-as-builder">
+        <h3>Social Media Profile Links</h3>
+        <div class="flex-row flex-center">
+          <label for="same-as-fields-count">Number of Links
+            <input type="number" min="1" id="sameas-fields-count" class="field-counter" />
+          </label>
+        </div>
+        <div class="flex-fields"></div>
+      </div>
+    </div>
+
   </section>
 
   </div>
