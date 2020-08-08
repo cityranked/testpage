@@ -177,3 +177,11 @@ input.field-counter {
   width: 2em;
   padding: 0.25;
 }
+
+.local-biz-header {
+  cursor: pointer;
+}
+
+#ops-info, #service-info {
+  display: none;
+}
