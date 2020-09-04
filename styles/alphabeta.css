@@ -1,0 +1,104 @@
+.flex-row {
+
+}
+
+.flex-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+body {
+  background-color: #404040;
+}
+
+.wall {
+  background-color: whitesmoke;
+  height: 100%
+}
+
+.passage-vert,
+.eastwestpassage {
+  background-color: black;
+}
+
+.passagewrapper {
+  height: 12.5%
+}
+
+.passage-vert {
+  margin: 0 12.5% 0 12.5%;
+  height: 100%;
+  background-color: black;
+  width: 75%;
+}
+
+.eastwestpassage {
+  height: 75%;
+  width: 100%;
+}
+
+.chamber {
+  height: 100%;
+  width:100%;
+  margin: 0 12.5% 0 12.5%;
+
+}
+
+.tiles {
+  height: 33.33%;
+  width: 100%;
+}
+
+.tile {
+  border: 1px solid blue;
+  //height: 100%;
+  width: 32.95%
+}
+
+.centertile {
+  border: 1px solid red;
+  width: 32.95%
+}
+
+.alphlist {
+  width: 80%;
+}
+
+.alphitem {
+  font-size:40px;
+  font-weight: 800;
+  text-align: center;
+  padding: 3em;
+  color: white;
+  //border: 2px solid white;
+  cursor: pointer;
+  list-style: none;
+}
+
+@media (max-width:400px) {
+  .stanza {
+    width: 100%;
+    height: 300px;
+    border: 4px solid white;
+    margin: 1em;
+  }
+}
+
+@media (min-width:401px) and (max-width:1199px) {
+  .stanza {
+    width: 450px;
+    height: 300px;
+    border: 4px solid white;
+    margin: 1em;
+  }
+}
+
+@media (min-width:1200px) {
+  .stanza {
+    width: 900px;
+    height: 600px;
+    border: 4px solid white;
+    margin: 1em;
+  }
+}

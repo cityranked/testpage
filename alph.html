@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/alphabeta.css">
+  <title>
+    Alpha | Beta
+  </title>
+</head>
+<body >
+
+  <div class="stanza">
+    <div class="wall">
+      <div class="passagewrapper flex-row flex-center">
+        <div class="passage-vert" id="north-passage"></div>
+      </div>
+      <div class="eastwestpassage flex-row flex-center">
+
+        <div class="chamber">
+
+          <div class="tiles flex-row flex-center">
+            <div class="tile" id="nw-corner"></div>
+            <div class="tile" id="north"></div>
+            <div class="tile" id="ne-corner"></div>
+          </div>
+          <div class="tiles flex-row flex-center">
+            <div class="tile" id="west"></div>
+            <div class="centertile" id="compass">
+              <div class="glyph" id="top-glyph"></div>
+              <div class="glyph" id="bottom-glyph"></div>
+            </div>
+            <div class="tile" id="east"></div>
+          </div>
+          <div class="tiles flex-row flex-center">
+            <div class="tile" id="sw-corner"></div>
+            <div class="tile" id="south"></div>
+            <div class="tile" id="se-corner"></div>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="passagewrapper flex-row flex-center">
+        <div class="passage-vert" id="south-passage"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-row flex-center">
+    <ul id="chromalist" class="alphlist">
+      <li id="gold" class="alphitem" toggle-color="white">&Alpha;&alpha;</li>
+      <li id="cornflowerblue" class="alphitem" toggle-color="white">&Beta;&beta;</li>
+      <li id="forestgreen" class="alphitem" toggle-color="white">&Gamma;&gamma;</li>
+      <li id="olivedrab" class="alphitem" toggle-color="white">&Delta;&delta;</li>
+      <li id="dimgrey" class="alphitem" toggle-color="white">&Epsilon;&epsilon;</li>
+      <li id="indigo" class="alphitem" toggle-color="white">&Zeta;&zeta;</li>
+      <li id="khaki" class="alphitem" toggle-color="white">&Eta;&eta;</li>
+      <li id="aliceblue" class="alphitem" toggle-color="white">&Theta;&theta;</li>
+      <li id="whitesmoke" class="alphitem" toggle-color="white">&Iota;&iota;</li>
+      <li id="burlywood" class="alphitem" toggle-color="white">&Kappa;&kappa;</li>
+      <li id="gold" class="alphitem" toggle-color="white">&Lambda;&lambda;</li>
+      <li id="firebrick" class="alphitem" toggle-color="white">&Mu;&mu;</li>
+      <li id="tomato" class="alphitem" toggle-color="white">&Nu;&nu;</li>
+      <li id="lavendar" class="alphitem" toggle-color="white">&Xi;&xi;</li>
+      <li id="azure" class="alphitem" toggle-color="white">&Omicron;&omicron;</li>
+      <li id="darkslategrey" class="alphitem" toggle-color="white">&Pi;&pi;</li>
+      <li id="maroon" class="alphitem" toggle-color="white">&Rho;&rho;</li>
+      <li id="darkgreen" class="alphitem" toggle-color="white">&Sigma;&sigma;</li>
+      <li id="lightslategray" class="alphitem" toggle-color="white">&Tau;&tau;</li>
+      <li id="silver" class="alphitem" toggle-color="white">&Upsilon;&upsilon;</li>
+      <li id="darkblue" class="alphitem" toggle-color="white">&Phi;&phi;</li>
+      <li id="goldenrod" class="alphitem" toggle-color="white">&Chi;&chi;</li>
+      <li id="skyblue" class="alphitem" toggle-color="white">&Psi;&psi;</li>
+      <li id="black" class="alphitem" toggle-color="white">&Omega;&omega;</li>
+    </ul>
+  </div>
+  <script type="application/javascript" src="lib/alphabeta.js"></script>
+</body>
+</html>
