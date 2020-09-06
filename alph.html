@@ -4,21 +4,25 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="styles/alphabeta.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>
     Alpha | Beta
   </title>
 </head>
 <body >
 
-  <div class="stanza">
-    <div class="wall">
-      <div class="passagewrapper flex-row flex-center">
-        <div class="passage-vert" id="north-passage"></div>
-      </div>
-      <div class="eastwestpassage flex-row flex-center">
+  <div class="stanza flex-row flex-center">
+    <div class="quadrant" id="nw-quad"></div>
+    <div class="quadrant" id="ne-quad"></div>
+    <div class="quadrant" id="sw-quad"></div>
+    <div class="quadrant" id="se-quad"></div>
+  </div>
+
+  <div class="relshell">
+    <div class="chambershell" >
+      <div class="chamber-wrapper flex-row flex-center">
 
         <div class="chamber">
-
           <div class="tiles flex-row flex-center">
             <div class="tile" id="nw-corner"></div>
             <div class="tile" id="north"></div>
@@ -26,10 +30,7 @@
           </div>
           <div class="tiles flex-row flex-center">
             <div class="tile" id="west"></div>
-            <div class="centertile" id="compass">
-              <div class="glyph" id="top-glyph"></div>
-              <div class="glyph" id="bottom-glyph"></div>
-            </div>
+            <div class="tile centertile" id="compass"></div>
             <div class="tile" id="east"></div>
           </div>
           <div class="tiles flex-row flex-center">
@@ -37,16 +38,12 @@
             <div class="tile" id="south"></div>
             <div class="tile" id="se-corner"></div>
           </div>
-          
         </div>
 
       </div>
-      <div class="passagewrapper flex-row flex-center">
-        <div class="passage-vert" id="south-passage"></div>
-      </div>
     </div>
   </div>
-
+<!--
   <div class="flex-row flex-center">
     <ul id="chromalist" class="alphlist">
       <li id="gold" class="alphitem" toggle-color="white">&Alpha;&alpha;</li>
@@ -75,6 +72,9 @@
       <li id="black" class="alphitem" toggle-color="white">&Omega;&omega;</li>
     </ul>
   </div>
+-->
   <script type="application/javascript" src="lib/alphabeta.js"></script>
+  <script type="application/javascript" src="lib/dom-helper.js"></script>
+    <script type="application/javascript" src="lib/navigator.js"></script>
 </body>
 </html>
