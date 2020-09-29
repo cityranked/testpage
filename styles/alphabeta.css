@@ -93,16 +93,17 @@ body {
 }
 
 .tile {
-  border: 1px solid blue;
+  //border: 1px solid blue;
   width: 32.5%;
 }
 
 .glyph {
-  border: 1px solid blue;
+  //border: 1px solid blue;
   width: 22.5%;
   font-size: 36px;
   font-weight: 800;
   cursor: pointer;
+  text-align: center;
 
 }
 
