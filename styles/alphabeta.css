@@ -125,6 +125,42 @@ body {
   z-index: 1000;
 }
 
+.portal-w {
+  font-size:32px;
+  z-index:8001;
+  color:black;
+  top:18%;
+  left:0.4%;
+  position:absolute
+}
+
+.portal-n {
+  font-size:32px;
+  z-index:8001;
+  color:black;
+  top:0.2%;
+  left:44.5%;
+  position:absolute
+}
+
+.portal-e {
+  font-size:32px;
+  z-index:8001;
+  color:black;
+  top:18%;
+  right:0.4%;
+  position:absolute
+}
+
+.portal-s {
+  font-size:32px;
+  z-index:8001;
+  color:black;
+  top:34%;
+  left:44.5%;
+  position:absolute
+}
+
 
 @media (min-width:401px) and (max-width:1199px) {
   .stanza {
@@ -149,6 +185,30 @@ body {
   .glyph {
     //border: 1px solid blue;
     width: 23.55%;
+  }
+
+  .portal-w {
+    font-size:36px;
+    top:39%;
+    left:1.5%;
+  }
+
+  .portal-n {
+    font-size:36px;
+    top:0.5%;
+    left:28%;
+  }
+
+  .portal-e {
+    font-size:36px;
+    top:39%;
+    left:55%;
+  }
+
+  .portal-s {
+    font-size:36px;
+    top:77%;
+    left:28%;
   }
 
 }
@@ -176,6 +236,30 @@ body {
 
   .glyph {
     width: 24.29%;
+  }
+
+  .portal-w {
+    font-size:72px;
+    top:45%;
+    left:0.3%;
+  }
+
+  .portal-n {
+    font-size:72px;
+    top:0.2%;
+    left:33.5%;
+  }
+
+  .portal-e {
+    font-size:72px;
+    top:45%;
+    left:68.5%;
+  }
+
+  .portal-s {
+    font-size:72px;
+    top:90%;
+    left:33.5%;
   }
 
 }

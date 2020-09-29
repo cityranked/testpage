@@ -4,18 +4,27 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="styles/alphabeta.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
   <title>
     Alpha | Beta
   </title>
 </head>
-<body >
+<body>
 
   <div class="stanza flex-row flex-center">
-    <div class="quadrant" id="nw-quad"></div>
-    <div class="quadrant" id="ne-quad"></div>
-    <div class="quadrant" id="sw-quad"></div>
-    <div class="quadrant" id="se-quad"></div>
+    <div class="quadrant" id="nw-quad">
+      <i class="fa fa-door-open portal-w" style=""></i>
+    </div>
+    <div class="quadrant" id="ne-quad">
+      <i class="fa fa-door-open portal-n" style=""></i>
+    </div>
+    <div class="quadrant" id="sw-quad">
+      <i class="fa fa-door-open portal-e" style=""></i>
+    </div>
+    <div class="quadrant" id="se-quad">
+      <i class="fa fa-door-open portal-s" style=""></i>
+    </div>
   </div>
 
   <div class="relshell">
@@ -43,6 +52,7 @@
       </div>
     </div>
   </div>
+
   <div class="flex-row flex-center">
     <ul id="chromalist" class="alphlist">
       <li id="gold" class="alphitem" toggle-color="white">&Alpha;&alpha;</li>
